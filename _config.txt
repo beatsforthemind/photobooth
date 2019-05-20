@@ -1,0 +1,35 @@
+# disable_overscan=0
+disable_overscan=1
+# overscan_left=0
+# overscan_right=0
+# overscan_top=0
+# overscan_bottom=0
+
+framebuffer_width=800
+framebuffer_height=480
+
+#
+#dtparam=i2c_arm=off
+#dtparam=spi=off
+dtparam=audio=on
+#
+#arm_freq=700
+#core_freq=250
+#sdram_freq=400
+#over_voltage=0
+
+start_x=1
+gpu_mem=128
+
+# DISPLAY
+hdmi_group=2
+hdmi_mode=1
+hdmi_mode=87
+hdmi_cvt 800 480 60 6 0 0 0
+
+dtparam=spi=on
+dtparam=i2c_arm=on
+
+# DTOVERLAY
+dtoverlay=ads7846,cs=1,penirq=25,penirq_pull=2,speed=50000,keep_vref_on=0,swapxy=0,pmax=255,xohms=150,xmin=200,xmax=3900,ymin=200,ymax=3900
+dtoverlay=w1-gpio-pullup,gpiopin=4,extpullup=1

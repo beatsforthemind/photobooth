@@ -1,0 +1,8 @@
+sudo apt-get install:
+sudo apt-get install cups
+sudo apt-get install python-cups
+
+https://www.howtogeek.com/169679/how-to-add-a-printer-to-your-raspberry-pi-or-other-linux-computer/
+
+pip install:
+pip install pil
